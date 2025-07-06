@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,10 +30,7 @@ export default function RootLayout({
       >
         {children}
       </body>
-      <nav className="p-4 bg-gray-100 flex gap-4">
-        <a href="/" className="text-blue-600 hover:underline">Inicio</a>
-        <a href="/about" className="text-blue-600 hover:underline">Sobre mí</a>
-      </nav>
+
     </html>
   );
 }
